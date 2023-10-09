@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Work+Sans:wght@400;500&display=swap');
+
+/* @font-face {
+  font-family: "pixel";
+  src: url("/font/PixelifySans-VariableFont_wght.ttf");
+} */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-size: 62.5%;
+  font-weight: 300;
+  color: #3e4a56;
+}
+body{
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background-color: #e6eff8;
+}
+
+h1{
+  font-size: 3.3rem;
+}
+h2{
+  font-size: 2rem;
+}
+a{
+  padding: 0 !important;
+  margin: 0 !important;
+}
+p,a,button{
+  font-size: 1.5rem;
+}
+.container{
+  width: 80%;
+  margin: auto;
+  min-height: 100vh;
+  background-color: #e6eff8;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: flex-start;
+  align-items: center;
+  /* Section title */
+  & .title{
+    background-color: transparent;
+    margin-top: 2rem;
+    text-align: center;
+    line-height: 2;
+    & h1{
+      font-weight: bold;
+    }
+  }
+  /* Section navbar */
+  & nav{
+    width: 100%;
+    background-color: #cee1f9;
+    padding: 1rem 0;
+    border-radius: 4px;
+    & ul{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12rem;
+      & li{
+        list-style: none;
+        padding: 0.7rem 1rem;
+        background-color: transparent;
+      }
+      & li:first-child{
+        background-color: #3969ee;
+        border-radius: 4px;
+        
+        & a{
+          font-weight: bold;
+          color: white !important;
+        }
+      }
+      & li a{
+        list-style-type: none;
+        text-decoration: none;
+        color: #3969ee;
+      }
+    }
+  }
+  & .main-box{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+    & .item{
+      flex: 20%;
+      background-color: white;
+      border-radius: 4px;
+      padding-bottom: 2rem;
+      & img{
+        width: 100%;
+        border-radius: 4px 4px 0 0;
+      }
+      & .detail{
+        margin-top: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        padding: 0 2rem;
+        gap: 1rem;
+        & .top{
+          display: flex;
+          flex-direction: row;
+          background-color: transparent;
+          justify-content: space-between;
+          align-items: center;
+          & p{
+            background-color: #c7d2f1;
+            padding: 0.1rem 0.4rem;
+            font-size: 1.3rem;
+            border-radius: 4px;
+          }
+          & i{
+            font-size: 1.6rem;
+          }
+        }
+        & h2{
+          font-weight: bold;
+        }
+        /* Rating */
+        & .rate{
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 0.4rem;
+          & i{
+            font-size: 1.6rem;
+            color: #e7a30f;
+          }
+          & p{
+            font-weight: bold;
+          }
+        }
+        /* Time footer */
+        & .time{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          & .ltime{
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            & i{
+              font-size: 1.6rem;
+              color: red;
+            }
+          }
+          & .rtime{
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            & i{
+              font-size: 1.6rem;
+              color: orangered;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.beginner{
+  background-color: #dff4e6 !important;
+  color: #22c55e;
+}
+.all-level{
+  background-color: #d7d1f0 !important;
+  color: #8a78cf;
+}
+/* small device phone*/
+@media (min-width: 320px){
+  .container{
+    line-height: 1.5;
+    width: 90%;
+    background-color: transparent;
+    & nav{
+      width: 100%;
+      & ul{
+        gap: 1rem;
+      }
+    }
+    & .title h1{
+      font-size: 2.5rem;
+    }
+  }
+  .main-box .item{
+    flex: 100%;
+  }
+}
+/* medium device tablet */
+@media (min-width: 678px){
+  .container{
+    line-height: 1.5;
+    width: 90%;
+    background-color: transparent;
+    & nav{
+      width: 100%;
+      & ul{
+        gap: 1rem;
+      }
+    }
+    & .title h1{
+      font-size: 2.5rem;
+    }
+  }
+  .main-box .item{
+    flex: 50%;
+  }
+}
+/* large device desktio */
+@media (min-width: 992px){
+  .container{
+    line-height: 1.5;
+    width: 90%;
+    background-color: transparent;
+    & nav{
+      & ul{
+        gap: 8rem;
+      }
+    }
+  }
+}
+/* extra large large desktio */
+@media (min-width: 1200px){
+  .container{
+    line-height: 1.5;
+    width: 90%;
+    background-color: transparent;
+    & nav{
+      & ul{
+        gap: 8rem;
+      }
+    }
+  }
+}
